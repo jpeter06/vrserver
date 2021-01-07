@@ -19,11 +19,11 @@ const io = socketIO(server, {
 /*app.use(basicAuth({
     users: { 'admin': 'admin' }
 }))
-*/
+
 var auth = express.basicAuth(function(user,pass) {
   return 'user' === 'aa' && 'pass' === 'aa';
 });
-
+*/
 //Port default 443  https://iosocket-server.glitch.me/
 app.use(express.static("public"));
 app.use(function(req, res, next) {
